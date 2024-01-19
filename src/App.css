@@ -194,6 +194,7 @@ body {
     background-position: center center;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 
 .main-about-text {
