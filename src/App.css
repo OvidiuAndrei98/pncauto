@@ -189,12 +189,11 @@ body {
 
 .main-about {
     width: 100%;
-    position: relative;
-    background: url('images/burning-coal_23-2147643498.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-image: url('images/burning-coal_23-2147643498.jpg');
+    background-attachment: scroll;
+    background-position: center center;
     background-size: cover;
+    position: relative;
 }
 
 .main-about-text {
@@ -291,6 +290,10 @@ body {
 
     .main-items {
         flex-direction: column;
+    }
+
+    .main-about {
+        background-attachment: initial;
     }
 
     .main-about-text {
