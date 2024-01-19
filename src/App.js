@@ -5,6 +5,7 @@ import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faHandshakeSimple } from '@fortawesome/free-solid-svg-icons'
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
+import { faFire } from '@fortawesome/free-solid-svg-icons'
 
 
 function App() {
@@ -74,14 +75,14 @@ window.addEventListener("scroll", changeNavbarColor);
       <span className='services-header'>Servicii:</span>
       <div className='services-section'>
         <div className='service-item'>
-          <FontAwesomeIcon icon={faScrewdriverWrench} size='3x' color='#1285FC'/>
+          <FontAwesomeIcon icon={faFire} size='3x' color='#1285FC'/>
           <span>Sudura</span>
-          <span>description description description description</span>
+          <span>Executăm lucrări de sudură auto de înaltă calitate,</span>
         </div>
         <div className='service-item'>
           <FontAwesomeIcon icon={faScrewdriverWrench} size='3x' color='#1285FC'/>
           <span>Reparatii</span>
-          <span>description description description description</span>
+          <span>Suntem specializați în diagnosticarea și repararea eficientă a sistemelor de răcire.</span>
         </div>
         <div className='service-item'>
           <FontAwesomeIcon icon={faScrewdriverWrench} size='3x' color='#1285FC'/>
