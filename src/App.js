@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faHandshakeSimple } from '@fortawesome/free-solid-svg-icons'
+import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 
 
 function App() {
@@ -34,9 +35,8 @@ window.addEventListener("scroll", changeNavbarColor);
           </div>
           <div className='menu-container'>
             <ul className='menu-list'>
-              <li>Telefon</li>
-              <li>Mail</li>
-              <li onClick={() => URL('https://api.whatsapp.com/send?phone=0741307779')}> <FontAwesomeIcon icon={['fab', 'apple']} />Whataspp</li>
+              <li>Contact</li>
+              <li onClick={() => URL('https://api.whatsapp.com/send?phone=741448739')}> <FontAwesomeIcon icon={['fab', 'apple']} />Whataspp</li>
             </ul>
           </div>
         </div>
@@ -67,14 +67,33 @@ window.addEventListener("scroll", changeNavbarColor);
       </div>
       <div className='main-about'>
         <div className='main-about-text'>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed turpis tincidunt id aliquet risus. Non odio euismod lacinia at quis. Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque. Id leo in vitae turpis massa sed elementum tempus egestas. At augue eget arcu dictum. Gravida neque convallis a cras. Cursus eget nunc scelerisque viverra mauris in aliquam sem. Turpis massa sed elementum tempus egestas sed. Dictum at tempor commodo ullamcorper a lacus. Mauris a diam maecenas sed enim. Rhoncus urna neque viverra justo nec ultrices dui. Suscipit tellus mauris a diam maecenas sed enim. Turpis massa tincidunt dui ut ornare lectus. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Dictum at tempor commodo ullamcorper a lacus vestibulum sed. Enim ut tellus elementum sagittis vitae et. Viverra nibh cras pulvinar mattis nunc.
-
-Venenatis tellus in metus vulputate eu scelerisque felis. At lectus urna duis convallis. Amet consectetur adipiscing elit duis tristique. </span>
+          <span>PENICA IMPEX reprezintă partenerul de încredere pentru clienții ce își doresc servicii profesioniste de sudură auto și reparatii radiatoare. Cu o echipă experimentată și dedicată, ne-am impus pe piața auto prin abordarea atentă a nevoilor clienților și oferirea de soluții eficiente în domeniul sudurii.</span>
         </div>
       </div>
-      <div className='section'>
-        <span className='title'>De ce să lucrati cu noi</span>
-        <span className='subtitle'>Pentru serviciile, calitatea produselor, competenta tehnica si inovativa si pentru seriozitate. Fiecare client e indrumat pas cu pas pe tot parcursul executiei si poate conta intotdeauna pe sfaturi si idei si mai ales ca avem foarte multa experienta in domeniu si multe lucrari in portofoliu.</span>
+      <div className='services'>
+      <span className='services-header'>Servicii:</span>
+      <div className='services-section'>
+        <div className='service-item'>
+          <FontAwesomeIcon icon={faScrewdriverWrench} size='3x' color='#1285FC'/>
+          <span>Sudura</span>
+          <span>description description description description</span>
+        </div>
+        <div className='service-item'>
+          <FontAwesomeIcon icon={faScrewdriverWrench} size='3x' color='#1285FC'/>
+          <span>Reparatii</span>
+          <span>description description description description</span>
+        </div>
+        <div className='service-item'>
+          <FontAwesomeIcon icon={faScrewdriverWrench} size='3x' color='#1285FC'/>
+          <span>Desfundare</span>
+          <span>description description description description</span>
+        </div>
+        <div className='service-item'>
+          <FontAwesomeIcon icon={faScrewdriverWrench} size='3x' color='#1285FC'/>
+          <span>Constructie</span>
+          <span>description description description description</span>
+        </div>
+      </div>
       </div>
       <footer className='footer'>
         <div className='main-container'>
