@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/pncauto/static/css/main.a1ea746f.css",
-    "main.js": "/pncauto/static/js/main.62c50f74.js",
+    "main.css": "/pncauto/static/css/main.2d7cd12e.css",
+    "main.js": "/pncauto/static/js/main.f21f2f20.js",
     "static/js/787.d2982fb4.chunk.js": "/pncauto/static/js/787.d2982fb4.chunk.js",
     "static/media/pexels-michael-kiliaris-19760113.jpg": "/pncauto/static/media/pexels-michael-kiliaris-19760113.c90bfcabc45d101dee90.jpg",
     "static/media/burning-coal_23-2147643498.jpg": "/pncauto/static/media/burning-coal_23-2147643498.2acf730eb02975d8089e.jpg",
     "index.html": "/pncauto/index.html",
-    "main.a1ea746f.css.map": "/pncauto/static/css/main.a1ea746f.css.map",
-    "main.62c50f74.js.map": "/pncauto/static/js/main.62c50f74.js.map",
+    "main.2d7cd12e.css.map": "/pncauto/static/css/main.2d7cd12e.css.map",
+    "main.f21f2f20.js.map": "/pncauto/static/js/main.f21f2f20.js.map",
     "787.d2982fb4.chunk.js.map": "/pncauto/static/js/787.d2982fb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1ea746f.css",
-    "static/js/main.62c50f74.js"
+    "static/css/main.2d7cd12e.css",
+    "static/js/main.f21f2f20.js"
   ]
 }
