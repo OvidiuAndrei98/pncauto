@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pncauto/static/css/main.a2734b92.css",
+    "main.css": "/pncauto/static/css/main.d680684e.css",
     "main.js": "/pncauto/static/js/main.5ac29203.js",
     "static/js/787.d2982fb4.chunk.js": "/pncauto/static/js/787.d2982fb4.chunk.js",
     "static/media/burning-coal_23-2147643498.jpg": "/pncauto/static/media/burning-coal_23-2147643498.2acf730eb02975d8089e.jpg",
     "index.html": "/pncauto/index.html",
-    "main.a2734b92.css.map": "/pncauto/static/css/main.a2734b92.css.map",
+    "main.d680684e.css.map": "/pncauto/static/css/main.d680684e.css.map",
     "main.5ac29203.js.map": "/pncauto/static/js/main.5ac29203.js.map",
     "787.d2982fb4.chunk.js.map": "/pncauto/static/js/787.d2982fb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2734b92.css",
+    "static/css/main.d680684e.css",
     "static/js/main.5ac29203.js"
   ]
 }
