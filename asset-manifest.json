@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pncauto/static/css/main.127297d9.css",
-    "main.js": "/pncauto/static/js/main.bb1c05d5.js",
+    "main.css": "/pncauto/static/css/main.8be3dc0e.css",
+    "main.js": "/pncauto/static/js/main.5ac29203.js",
     "static/js/787.d2982fb4.chunk.js": "/pncauto/static/js/787.d2982fb4.chunk.js",
     "static/media/burning-coal_23-2147643498.jpg": "/pncauto/static/media/burning-coal_23-2147643498.2acf730eb02975d8089e.jpg",
     "index.html": "/pncauto/index.html",
-    "main.127297d9.css.map": "/pncauto/static/css/main.127297d9.css.map",
-    "main.bb1c05d5.js.map": "/pncauto/static/js/main.bb1c05d5.js.map",
+    "main.8be3dc0e.css.map": "/pncauto/static/css/main.8be3dc0e.css.map",
+    "main.5ac29203.js.map": "/pncauto/static/js/main.5ac29203.js.map",
     "787.d2982fb4.chunk.js.map": "/pncauto/static/js/787.d2982fb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.127297d9.css",
-    "static/js/main.bb1c05d5.js"
+    "static/css/main.8be3dc0e.css",
+    "static/js/main.5ac29203.js"
   ]
 }
