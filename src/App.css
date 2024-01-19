@@ -189,8 +189,7 @@ body {
 
 .main-about {
     width: 100%;
-    background-image: url('images/burning-coal_23-2147643498.jpg');
-    background-attachment: scroll;
+    background-image: url('images/pexels-michael-kiliaris-19760113.jpg');
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -291,10 +290,6 @@ body {
 
     .main-items {
         flex-direction: column;
-    }
-
-    .main-about {
-        background-attachment: initial;
     }
 
     .main-about-text {
