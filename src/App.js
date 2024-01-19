@@ -67,7 +67,10 @@ window.addEventListener("scroll", changeNavbarColor);
 Venenatis tellus in metus vulputate eu scelerisque felis. At lectus urna duis convallis. Amet consectetur adipiscing elit duis tristique. </span>
         </div>
       </div>
-      <div className='section'>Demo section</div>
+      <div className='section'>
+        <span className='title'>De ce să lucrati cu noi</span>
+        <span className='subtitle'>Pentru serviciile, calitatea produselor, competenta tehnica si inovativa si pentru seriozitate. Fiecare client e indrumat pas cu pas pe tot parcursul executiei si poate conta intotdeauna pe sfaturi si idei si mai ales ca avem foarte multa experienta in domeniu si multe lucrari in portofoliu.</span>
+      </div>
       <footer className='footer'>
         <div className='main-container'>
           <div>Legal</div>
