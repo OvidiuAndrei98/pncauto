@@ -15,6 +15,11 @@ function App() {
         setScrollPosition(false);
     }
 };
+
+function URL(url) {
+  window.location.href = url;
+}
+
 window.addEventListener("scroll", changeNavbarColor);
   return (
     <>
@@ -31,7 +36,7 @@ window.addEventListener("scroll", changeNavbarColor);
             <ul className='menu-list'>
               <li>Telefon</li>
               <li>Mail</li>
-              <li> <FontAwesomeIcon icon={['fab', 'apple']} />Whataspp</li>
+              <li onClick={() => URL('https://api.whatsapp.com/send?phone=0741307779')}> <FontAwesomeIcon icon={['fab', 'apple']} />Whataspp</li>
             </ul>
           </div>
         </div>
