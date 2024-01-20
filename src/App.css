@@ -306,7 +306,8 @@
   }
   
   .contact .map-container {
-      max-width: 60%;
+    width: 60%;
+    min-height: 350px;
   }
   
   .section > .title {
