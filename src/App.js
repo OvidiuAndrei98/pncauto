@@ -167,7 +167,7 @@ function App() {
               <li>Program: <span>L-S 09:00 - 16:00</span></li>
             </ul>
           </div>
-          <div className="map-container" style={{minHeight:'400px', width:'50%'}}><GoogleMapReact
+          <div className="map-container"><GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyABVU1VlBjCunbzR08tvi4yFFZwCaqAgNs" }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
