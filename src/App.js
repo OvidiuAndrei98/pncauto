@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useId, useState, useCallback } from "react";
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
@@ -41,6 +41,20 @@ function App() {
     return marker;
    };
 
+   const [contact, scrollToContact] = useScrollTo();
+
+   function useScrollTo() {
+    const id = useId();
+    const handleScroll = useCallback(() => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [id]);
+
+    return [id, handleScroll];
+}
+
   return (
     <>
       <header className="header">
@@ -54,8 +68,7 @@ function App() {
           </div>
           <div className="menu-container">
             <ul className="menu-list">
-              <li onClick={() =>
-                  URL("#contact")}>Contact</li>
+              <li onClick={scrollToContact}>Contact</li>
               <li
                 onClick={() =>
                   URL("https://api.whatsapp.com/send?phone=741448739")
@@ -156,7 +169,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div id="contact" className="contact-container">
+      <div id={contact} className="contact-container">
         <div className="title">Contact:</div>
         <div className="contact">
           <div className="contact-info">
@@ -174,7 +187,8 @@ function App() {
         yesIWantToUseGoogleMapApiInternals
         onGoogleApiLoaded={({ map, maps }) => renderMarkers(map, maps)}
       >
-      </GoogleMapReact></div>
+      </GoogleMapReact>
+      </div>
         </div>
       </div>
       <footer className="footer">
