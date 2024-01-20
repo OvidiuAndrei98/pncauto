@@ -424,5 +424,9 @@
       font-size: 16px;
       text-align: justify;
     }
+
+    .footer {
+        padding: 50px 50px;
+    }
   }
   
