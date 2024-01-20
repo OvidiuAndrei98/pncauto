@@ -62,7 +62,7 @@ function App() {
                 }
               >
                 <FontAwesomeIcon icon={["fab", "apple"]} />
-                Whataspp
+                WhatsApp
               </li>
             </ul>
           </div>
