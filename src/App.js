@@ -10,6 +10,13 @@ import { faSoap } from "@fortawesome/free-solid-svg-icons";
 import GoogleMapReact from "google-map-react";
 import { Formik, Field, Form } from "formik";
 import emailjs from "@emailjs/browser";
+import img1 from "./images/115_Suduraaluminiuinperetesubtire.jpg";
+import img2 from "./images/Imag133.jpg";
+import img3 from "./images/IMAG0577.jpg";
+import img4 from "./images/imagini-cu-lucrari-reparatii-radiatoare-si-sudura-in-argon-ro_photo136_0.jpg";
+import img5 from "./images/reparatie-sudura-radiator-aluminiu.jpg";
+import img6 from "./images/Reparatii radiatoare Brasov sudura aluminiu.jpg";
+import img7 from "./images/Reparatii radiatoare Brasov sudura.jpg";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(false);
@@ -105,7 +112,10 @@ function App() {
       </header>
       <div className="front-view">
         <div className="image-container">
-          <div className="hero-text">REPARATII <span className="text-gradient">RADIATOARE</span>  ORICE TIP</div>
+          <div className="hero-text">
+            REPARATII <span className="text-gradient">RADIATOARE</span> ORICE
+            TIP
+          </div>
           <div onClick={scrollToContact} className="contact-button">
             Contacteaza-ne
           </div>
@@ -185,6 +195,60 @@ function App() {
               Diagnosticarea problemelor de funcționare ale sistemului de
               răcire.
             </span>
+          </div>
+        </div>
+      </div>
+      <div className="image-slider-container">
+        <div className="carrousel" useScrollTo>
+          <div className="image">
+            <img src={img1} />
+          </div>
+          <div className="image">
+            <img src={img2} />
+          </div>
+          <div className="image">
+            <img src={img3} />
+          </div>
+          <div className="image">
+            <img src={img4} />
+          </div>
+          <div className="image">
+            <img src={img5} />
+          </div>
+          <div className="image">
+            <img src={img6} />
+          </div>
+          <div className="image">
+            <img src={img7} />
+          </div>
+          <div className="image">
+            <img src={img7} />
+          </div>
+        </div>
+        <div className="carrousel" useScrollTo>
+          <div className="image">
+            <img src={img1} />
+          </div>
+          <div className="image">
+            <img src={img2} />
+          </div>
+          <div className="image">
+            <img src={img3} />
+          </div>
+          <div className="image">
+            <img src={img4} />
+          </div>
+          <div className="image">
+            <img src={img5} />
+          </div>
+          <div className="image">
+            <img src={img6} />
+          </div>
+          <div className="image">
+            <img src={img7} />
+          </div>
+          <div className="image">
+            <img src={img7} />
           </div>
         </div>
       </div>
