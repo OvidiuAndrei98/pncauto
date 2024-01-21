@@ -1,20 +1,24 @@
-import { useId, useState, useCallback } from "react";
+import { useId, useState, useCallback, useRef } from "react";
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faStethoscope } from "@fortawesome/free-solid-svg-icons";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faHandshakeSimple } from "@fortawesome/free-solid-svg-icons";
 import { faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 import { faFire } from "@fortawesome/free-solid-svg-icons";
-import GoogleMapReact from 'google-map-react';
+import { faSoap } from "@fortawesome/free-solid-svg-icons";
+import GoogleMapReact from "google-map-react";
+import { Formik, Field, Form } from "formik";
+import emailjs from "@emailjs/browser";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(false);
+  const formRef = useRef();
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
       setScrollPosition(true);
     } else {
-      setScrollPosition(false);        
+      setScrollPosition(false);
     }
   };
 
@@ -27,33 +31,51 @@ function App() {
   const defaultProps = {
     center: {
       lat: 44.3714657195532,
-      lng: 26.092456532923354
+      lng: 26.092456532923354,
     },
-    zoom: 15
+    zoom: 15,
   };
 
   const renderMarkers = (map, maps) => {
     let marker = new maps.Marker({
-    position: { lat: 44.3714657195532, lng: 26.092456532923354 },
-    map,
-    title: 'Hello World!'
+      position: { lat: 44.3714657195532, lng: 26.092456532923354 },
+      map,
+      title: "Hello World!",
     });
     return marker;
-   };
+  };
 
-   const [contact, scrollToContact] = useScrollTo();
+  const [contact, scrollToContact] = useScrollTo();
 
-   function useScrollTo() {
+  function useScrollTo() {
     const id = useId();
     const handleScroll = useCallback(() => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }, [id]);
 
     return [id, handleScroll];
-}
+  }
+
+  const sendEmail = (values) => {
+    emailjs
+      .sendForm(
+        "service_4qkikaq",
+        "template_ln59k3t",
+        formRef.current,
+        "x_NDl4TwQlsT6pBDK"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <>
@@ -82,7 +104,12 @@ function App() {
         </div>
       </header>
       <div className="front-view">
-        <div className="image-container"></div>
+        <div className="image-container">
+          <div className="hero-text">REPARATII <span className="text-gradient">RADIATOARE</span>  ORICE TIP</div>
+          <div onClick={scrollToContact} className="contact-button">
+            Contacteaza-ne
+          </div>
+        </div>
       </div>
       <div className="main">
         <span className="title">De ce sa ne alegi pe noi?</span>
@@ -124,7 +151,7 @@ function App() {
         </div>
       </div>
       <div className="services">
-        <span className="services-header">Servicii:</span>
+        <span className="services-header">Servicii</span>
         <div className="services-section">
           <div className="service-item">
             <FontAwesomeIcon icon={faFire} size="3x" color="#1285FC" />
@@ -144,11 +171,7 @@ function App() {
             </span>
           </div>
           <div className="service-item">
-            <FontAwesomeIcon
-              icon={faScrewdriverWrench}
-              size="3x"
-              color="#1285FC"
-            />
+            <FontAwesomeIcon icon={faSoap} size="3x" color="#1285FC" />
             <span>Curatare</span>
             <span>
               Testarea presiunii sistemului de răcire pentru depistarea
@@ -156,11 +179,7 @@ function App() {
             </span>
           </div>
           <div className="service-item">
-            <FontAwesomeIcon
-              icon={faScrewdriverWrench}
-              size="3x"
-              color="#1285FC"
-            />
+            <FontAwesomeIcon icon={faStethoscope} size="3x" color="#1285FC" />
             <span>Diagnosticare</span>
             <span>
               Diagnosticarea problemelor de funcționare ale sistemului de
@@ -170,25 +189,77 @@ function App() {
         </div>
       </div>
       <div id={contact} className="contact-container">
-        <div className="title">Contact:</div>
+        <div className="title">Contacteaza-ne</div>
         <div className="contact">
-          <div className="contact-info">
-            <ul>
-              <li>Adresa: <span>Intrarea naruja 1, Sector 4</span></li>
-              <li>Telefon: <span>0741444444</span></li>
-              <li>Email: <span>contact@pncauto.ro</span></li>
-              <li>Program: <span>L-S 09:00 - 16:00</span></li>
-            </ul>
+          <div className="contact-form">
+            <Formik
+              initialValues={{
+                firstName: "",
+                lastName: "",
+                email: "",
+              }}
+              onSubmit={async (values) => {
+                await new Promise((r) => setTimeout(r, 500));
+                sendEmail(values);
+              }}
+            >
+              <Form ref={formRef}>
+                <label htmlFor="firstName">Prenume</label>
+                <Field id="firstName" name="firstName" placeholder="Prenume" />
+
+                <label htmlFor="lastName">Nume</label>
+                <Field id="lastName" name="lastName" placeholder="Nume" />
+
+                <label htmlFor="email">Email</label>
+                <Field
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                />
+
+                <label htmlFor="message">Mesaj</label>
+                <Field
+                  id="message"
+                  name="message"
+                  placeholder="Mesaj..."
+                  as="textarea"
+                />
+                <button className="submit-button" type="submit">
+                  Trimite
+                </button>
+              </Form>
+            </Formik>
           </div>
-          <div className="map-container"><GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyABVU1VlBjCunbzR08tvi4yFFZwCaqAgNs" }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
-        yesIWantToUseGoogleMapApiInternals
-        onGoogleApiLoaded={({ map, maps }) => renderMarkers(map, maps)}
-      >
-      </GoogleMapReact>
-      </div>
+          <div className="contact-details">
+            <div className="contact-info">
+              <ul>
+                <li>
+                  Adresa: <span>Intrarea Naruja 1, Sector 4, Bucuresti</span>
+                </li>
+                <li>
+                  Telefon: <span>0741444444</span>
+                </li>
+                <li>
+                  Email: <span>contact@pncauto.ro</span>
+                </li>
+                <li>
+                  Program: <span>L-S 09:00 - 16:00</span>
+                </li>
+              </ul>
+            </div>
+            <div className="map-container">
+              <GoogleMapReact
+                bootstrapURLKeys={{
+                  key: "AIzaSyABVU1VlBjCunbzR08tvi4yFFZwCaqAgNs",
+                }}
+                defaultCenter={defaultProps.center}
+                defaultZoom={defaultProps.zoom}
+                yesIWantToUseGoogleMapApiInternals
+                onGoogleApiLoaded={({ map, maps }) => renderMarkers(map, maps)}
+              ></GoogleMapReact>
+            </div>
+          </div>
         </div>
       </div>
       <footer className="footer">
