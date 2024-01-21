@@ -298,6 +298,10 @@ body {
 }
 
 .carrousel {
+    scroll-behavior: auto;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
     display: inline-flex;
     animation: 35s slide infinite linear;
 }
@@ -307,6 +311,7 @@ body {
 }
 
 .carrousel .image {
+    scroll-snap-align: start;
     width: 300px;
     height: 250px;
     margin: 0 20px;

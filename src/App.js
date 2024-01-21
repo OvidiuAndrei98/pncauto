@@ -17,6 +17,8 @@ import img4 from "./images/imagini-cu-lucrari-reparatii-radiatoare-si-sudura-in-
 import img5 from "./images/reparatie-sudura-radiator-aluminiu.jpg";
 import img6 from "./images/Reparatii radiatoare Brasov sudura aluminiu.jpg";
 import img7 from "./images/Reparatii radiatoare Brasov sudura.jpg";
+import{ReactComponent as LogoWhite } from "./images/PNC-AUTO-logos_white.svg";
+import{ReactComponent as LogoBlack } from "./images/PNC-AUTO-logos_black.svg";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(false);
@@ -93,7 +95,7 @@ function App() {
           }
         >
           <div className="logo-container">
-            <span>PNC AUTO</span>
+            {scrollPosition ? <LogoBlack /> : <LogoWhite />}
           </div>
           <div className="menu-container">
             <ul className="menu-list">
