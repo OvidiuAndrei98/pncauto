@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pncauto/static/css/main.120fc319.css",
-    "main.js": "/pncauto/static/js/main.0288f377.js",
+    "main.css": "/pncauto/static/css/main.b4c84122.css",
+    "main.js": "/pncauto/static/js/main.03856c8c.js",
     "static/js/787.d2982fb4.chunk.js": "/pncauto/static/js/787.d2982fb4.chunk.js",
     "static/media/pexels-michael-kiliaris-19760113.jpg": "/pncauto/static/media/pexels-michael-kiliaris-19760113.c90bfcabc45d101dee90.jpg",
     "static/media/burning-coal_23-2147643498.jpg": "/pncauto/static/media/burning-coal_23-2147643498.2acf730eb02975d8089e.jpg",
@@ -10,15 +10,17 @@
     "static/media/IMAG0577.jpg": "/pncauto/static/media/IMAG0577.1eb86ba49f4872ac6529.jpg",
     "static/media/imagini-cu-lucrari-reparatii-radiatoare-si-sudura-in-argon-ro_photo136_0.jpg": "/pncauto/static/media/imagini-cu-lucrari-reparatii-radiatoare-si-sudura-in-argon-ro_photo136_0.1b52e96e07f2d0b2f60e.jpg",
     "static/media/reparatie-sudura-radiator-aluminiu.jpg": "/pncauto/static/media/reparatie-sudura-radiator-aluminiu.536ae8e5a62132e4548f.jpg",
+    "static/media/PNC-AUTO-logos_white.svg": "/pncauto/static/media/PNC-AUTO-logos_white.156a8daf4f74bbb03773d7fdb3a88f58.svg",
+    "static/media/PNC-AUTO-logos_black.svg": "/pncauto/static/media/PNC-AUTO-logos_black.1debe7ebc30809d4278e1554a423a63f.svg",
     "static/media/115_Suduraaluminiuinperetesubtire.jpg": "/pncauto/static/media/115_Suduraaluminiuinperetesubtire.20743ed8e7cbce30551a.jpg",
     "static/media/Reparatii radiatoare Brasov sudura aluminiu.jpg": "/pncauto/static/media/Reparatii radiatoare Brasov sudura aluminiu.2a3bc71fbb2ebab970aa.jpg",
     "index.html": "/pncauto/index.html",
-    "main.120fc319.css.map": "/pncauto/static/css/main.120fc319.css.map",
-    "main.0288f377.js.map": "/pncauto/static/js/main.0288f377.js.map",
+    "main.b4c84122.css.map": "/pncauto/static/css/main.b4c84122.css.map",
+    "main.03856c8c.js.map": "/pncauto/static/js/main.03856c8c.js.map",
     "787.d2982fb4.chunk.js.map": "/pncauto/static/js/787.d2982fb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.120fc319.css",
-    "static/js/main.0288f377.js"
+    "static/css/main.b4c84122.css",
+    "static/js/main.03856c8c.js"
   ]
 }
