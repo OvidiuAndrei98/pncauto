@@ -124,45 +124,6 @@ function App() {
         </div>
       </div>
       <div id={contact}></div>
-      <div className="main">
-        <span className="title">De ce sa ne alegi pe noi?</span>
-        <span className="subtitle">
-          Seriozitate, punctualitate, performanta, servicii de cea mai buna
-          calitate
-        </span>
-        <div className="main-items">
-          <div className="menu-item">
-            <FontAwesomeIcon icon={faBriefcase} size="4x" color="#E91E62" />
-            <span className="title">Experienta</span>
-            <span className="subtitle">Peste 20 de ani in domeniu</span>
-          </div>
-          <div className="menu-item">
-            <FontAwesomeIcon icon={faCheck} size="4x" color="#04DD01" />
-            <span className="title">Calitate</span>
-            <span className="subtitle">Materiale de cea mai buna calitate</span>
-          </div>
-          <div className="menu-item">
-            <FontAwesomeIcon
-              icon={faHandshakeSimple}
-              size="4x"
-              color="#5F5CD6"
-            />
-            <span className="title">Seriozitate</span>
-            <span className="subtitle">Te poti baza pe noi</span>
-          </div>
-        </div>
-      </div>
-      <div className="main-about">
-        <div className="main-about-text">
-          <span>
-            PENICA IMPEX reprezintă partenerul de încredere pentru clienții ce
-            își doresc servicii profesioniste de sudură auto și reparatii
-            radiatoare. Cu o echipă experimentată și dedicată, ne-am impus pe
-            piața auto prin abordarea atentă a nevoilor clienților și oferirea
-            de soluții eficiente în domeniul sudurii.
-          </span>
-        </div>
-      </div>
       <div className="services">
         <span className="services-header">Servicii</span>
         <div className="services-section">
@@ -198,6 +159,45 @@ function App() {
               Diagnosticarea problemelor de funcționare ale sistemului de
               răcire.
             </span>
+          </div>
+        </div>
+      </div>
+      <div className="main-about">
+        <div className="main-about-text">
+          <span>
+            PENICA IMPEX reprezintă partenerul de încredere pentru clienții ce
+            își doresc servicii profesioniste de sudură auto și reparatii
+            radiatoare. Cu o echipă experimentată și dedicată, ne-am impus pe
+            piața auto prin abordarea atentă a nevoilor clienților și oferirea
+            de soluții eficiente în domeniul sudurii.
+          </span>
+        </div>
+      </div>
+      <div className="main">
+        <span className="title">De ce sa ne alegi pe noi?</span>
+        <span className="subtitle">
+          Seriozitate, punctualitate, performanta, servicii de cea mai buna
+          calitate
+        </span>
+        <div className="main-items">
+          <div className="menu-item">
+            <FontAwesomeIcon icon={faBriefcase} size="4x" color="#E91E62" />
+            <span className="title">Experienta</span>
+            <span className="subtitle">Peste 20 de ani in domeniu</span>
+          </div>
+          <div className="menu-item">
+            <FontAwesomeIcon icon={faCheck} size="4x" color="#04DD01" />
+            <span className="title">Calitate</span>
+            <span className="subtitle">Materiale de cea mai buna calitate</span>
+          </div>
+          <div className="menu-item">
+            <FontAwesomeIcon
+              icon={faHandshakeSimple}
+              size="4x"
+              color="#5F5CD6"
+            />
+            <span className="title">Seriozitate</span>
+            <span className="subtitle">Te poti baza pe noi</span>
           </div>
         </div>
       </div>
