@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pncauto/static/css/main.b8ea5815.css",
+    "main.css": "/pncauto/static/css/main.ad520458.css",
     "main.js": "/pncauto/static/js/main.4fa29030.js",
     "static/js/787.d2982fb4.chunk.js": "/pncauto/static/js/787.d2982fb4.chunk.js",
     "static/media/pexels-michael-kiliaris-19760113.jpg": "/pncauto/static/media/pexels-michael-kiliaris-19760113.c90bfcabc45d101dee90.jpg",
@@ -15,12 +15,12 @@
     "static/media/115_Suduraaluminiuinperetesubtire.jpg": "/pncauto/static/media/115_Suduraaluminiuinperetesubtire.20743ed8e7cbce30551a.jpg",
     "static/media/Reparatii radiatoare Brasov sudura aluminiu.jpg": "/pncauto/static/media/Reparatii radiatoare Brasov sudura aluminiu.2a3bc71fbb2ebab970aa.jpg",
     "index.html": "/pncauto/index.html",
-    "main.b8ea5815.css.map": "/pncauto/static/css/main.b8ea5815.css.map",
+    "main.ad520458.css.map": "/pncauto/static/css/main.ad520458.css.map",
     "main.4fa29030.js.map": "/pncauto/static/js/main.4fa29030.js.map",
     "787.d2982fb4.chunk.js.map": "/pncauto/static/js/787.d2982fb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8ea5815.css",
+    "static/css/main.ad520458.css",
     "static/js/main.4fa29030.js"
   ]
 }
