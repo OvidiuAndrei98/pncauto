@@ -70,6 +70,20 @@ body {
   align-items: center;
 }
 
+.menu-list li .neo-button.color-change {
+  box-shadow: 0.3vmin 0.3vmin #000;
+  border: solid 0.3vmin#000;
+  padding: 4px;
+  background: #25D366;
+  color: black;
+  border-radius: 5px;
+  transition: transform .5s ease;
+}
+
+.menu-list li .neo-button.color-change:hover {
+  transform: scale(1.1);
+}
+
 .header-container .menu-list li::before {
   margin: auto;
   content: "";
@@ -110,7 +124,7 @@ body {
   background-size: cover;
   display: flex;
   justify-content: flex-start;
-  padding-left: 20px;
+  padding-left: 190px;
 }
 
 .image-container::before {
@@ -269,7 +283,7 @@ body {
   justify-content: center;
   max-width: 1028px;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 50px 0;
   gap: 20px;
 }
 
@@ -329,7 +343,7 @@ body {
 }
 
 .contact-container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -337,7 +351,18 @@ body {
   margin: 40px auto;
   box-shadow: 1px 0px 29px -8px rgba(0, 0, 0, 0.75);
   padding: 25px 20px;
-  border-radius: 10px;
+  border-radius: 10px; */
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1024px;
+    margin: 40px auto;
+    box-shadow: 0.7vmin 0.7vmin black;
+    padding: 25px 20px;
+    border-radius: 15px;
+    border: 0.3vmin solid black;
+    background-color: #2f82f817;
 }
 
 .contact-container .title {
@@ -370,7 +395,7 @@ body {
 .contact-form form input,
 .contact-form form textarea {
   margin: 5px 0;
-  background-color: white;
+  background-color: #ffffffb0;
   padding: 10px 15px;
   border: none;
   box-shadow: 0 0 1px 1px #c0c0c0;
@@ -408,6 +433,8 @@ body {
   align-self: flex-end;
   margin-top: 5px;
   cursor: pointer;
+  box-shadow: 0.3vmin 0.3vmin #000;
+  border: solid 0.3vmin#000;
 }
 
 .contact-form .submit-button:hover {

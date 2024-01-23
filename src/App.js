@@ -106,7 +106,7 @@ function App() {
                 }
               >
                 <FontAwesomeIcon icon={["fab", "apple"]} />
-                WhatsApp
+                <span className={`neo-button ${scrollPosition ? 'color-change' : ''}`}>WhatsApp</span>
               </li>
             </ul>
           </div>
