@@ -71,9 +71,9 @@ body {
 }
 
 .menu-list li .neo-button.color-change {
-  box-shadow: 0.3vmin 0.3vmin #000;
-  border: solid 0.3vmin#000;
-  padding: 4px;
+  box-shadow: 0.8vmin 0.8vmin #000;
+  border: solid 0.5vmin#000;
+  padding: 6px;
   background: #25D366;
   color: black;
   border-radius: 5px;
