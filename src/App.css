@@ -716,6 +716,11 @@ body {
 
   }
 
+  .contact-button {
+    border: 2px solid #ffffff;
+    box-shadow: 0.9vmin 0.9vmin #ffffff;
+  }
+
   /**End neo main */
 
   .main > .title {
@@ -811,7 +816,7 @@ body {
     align-self: flex-end;
     margin-top: 5px;
     cursor: pointer;
-    box-shadow: 0.4vmin 0.4vmin #000;
+    box-shadow: 0.8vmin 0.8vmin #000;
     border: solid 0.3vmin#000;
   }
 
