@@ -119,10 +119,11 @@ function App() {
             TIP
           </div>
           <div onClick={scrollToContact} className="contact-button">
-            Contacteaza-ne
+            Vezi mai multe
           </div>
         </div>
       </div>
+      <div id={contact}></div>
       <div className="main">
         <span className="title">De ce sa ne alegi pe noi?</span>
         <span className="subtitle">
@@ -131,19 +132,19 @@ function App() {
         </span>
         <div className="main-items">
           <div className="menu-item">
-            <FontAwesomeIcon icon={faBriefcase} size="5x" color="#E91E62" />
+            <FontAwesomeIcon icon={faBriefcase} size="4x" color="#E91E62" />
             <span className="title">Experienta</span>
             <span className="subtitle">Peste 20 de ani in domeniu</span>
           </div>
           <div className="menu-item">
-            <FontAwesomeIcon icon={faCheck} size="5x" color="#04DD01" />
+            <FontAwesomeIcon icon={faCheck} size="4x" color="#04DD01" />
             <span className="title">Calitate</span>
             <span className="subtitle">Materiale de cea mai buna calitate</span>
           </div>
           <div className="menu-item">
             <FontAwesomeIcon
               icon={faHandshakeSimple}
-              size="5x"
+              size="4x"
               color="#5F5CD6"
             />
             <span className="title">Seriozitate</span>
@@ -254,7 +255,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div id={contact} className="contact-container">
+      <div className="contact-container">
         <div className="title">Contacteaza-ne</div>
         <div className="contact">
           <div className="contact-form">
