@@ -229,12 +229,17 @@ body {
 }
 
 .main-about {
-  width: 100%;
+  /* width: 100%; */
   background-image: url("images/pexels-michael-kiliaris-19760113.jpg");
   background-position: center center;
   background-size: cover;
   position: relative;
   background-attachment: fixed;
+  margin: 0 auto;
+  width: 95%;
+  border: 5px solid black;
+  box-shadow: 1vmin 1vmin black;
+  border-radius: 5px;
 }
 
 .main-about-text {
@@ -288,7 +293,7 @@ body {
 }
 
 .service-item {
-  display: flex;
+  /* display: flex;
   height: 200px;
   width: 200px;
   justify-content: space-evenly;
@@ -299,8 +304,35 @@ body {
   transition: all 0.5s ease;
   align-items: center;
   padding: 0 10px;
+  text-align: center; */
+  display: flex;
+  height: 200px;
+  width: 200px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  transition: all 0.5s ease;
+  align-items: center;
+  padding: 0 10px;
   text-align: center;
+  box-shadow: 0.4vmin 0.4vmin #9c7bff, 0.7vmin 0.7vmin #000, 0.45vmin 0.7vmin #000, 0.7vmin 0.55vmin #000;
+  border-radius: 10px;
 }
+
+.service-item:nth-child(2) {
+  box-shadow: 0.4vmin 0.4vmin #f8ff1d, 0.7vmin 0.7vmin #000, 0.45vmin 0.7vmin #000, 0.7vmin 0.55vmin #000;
+}
+
+.service-item:nth-child(3) {
+  box-shadow: 0.4vmin 0.4vmin #f8e0fa, 0.7vmin 0.7vmin #000, 0.45vmin 0.7vmin #000, 0.7vmin 0.55vmin #000;
+}
+
+.service-item:nth-child(4) {
+  box-shadow: 0.4vmin 0.4vmin #b2e2bb, 0.7vmin 0.7vmin #000, 0.45vmin 0.7vmin #000, 0.7vmin 0.55vmin #000;
+}
+
+
 
 .service-item:hover {
   box-shadow: 0 4px 5px -2px #1285fc;
@@ -316,10 +348,17 @@ body {
 }
 
 .carrousel {
+    /* scroll-behavior: auto;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    display: inline-flex;
+    animation: 35s slide infinite linear; */
     scroll-behavior: auto;
     overflow-y: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
+    height: 270px;
     display: inline-flex;
     animation: 35s slide infinite linear;
 }
@@ -329,10 +368,19 @@ body {
 }
 
 .carrousel .image {
+    /* scroll-snap-align: start;
+    width: 300px;
+    height: 250px;
+    margin: 0 20px; */
+    padding: 20px;
     scroll-snap-align: start;
     width: 300px;
     height: 250px;
     margin: 0 20px;
+    box-shadow: 0.7vmin 0.7vmin black;
+    background: #2f82f8b3;
+    border: 5px solid black;
+    border-radius: 5px;
 }
 
 .carrousel .image img {
