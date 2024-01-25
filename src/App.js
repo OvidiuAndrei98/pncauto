@@ -117,9 +117,9 @@ function App() {
           <div className="hero-text">
             REPARATII <span className="text-gradient">RADIATOARE</span> ORICE
             TIP
-          </div>
-          <div onClick={scrollToContact} className="contact-button">
+            <div onClick={scrollToContact} className="contact-button">
             Vezi mai multe
+          </div>
           </div>
         </div>
       </div>
