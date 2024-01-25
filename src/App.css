@@ -71,8 +71,8 @@ body {
 }
 
 .menu-list li .neo-button.color-change {
-    box-shadow: 6px 6px #000;
-    border: solid 4px #000;
+  box-shadow: 6px 6px #000;
+  border: solid 4px #000;
   padding: 6px;
   background: #25d366;
   color: black;
@@ -238,18 +238,15 @@ body {
 }
 
 .menu-item:nth-child(1) {
-  box-shadow: 5px 5px #e9395c, 6px 6px #000,
-    6px 8px #000, 7px 6px #000;
+  box-shadow: 5px 5px #e9395c, 6px 6px #000, 6px 8px #000, 7px 6px #000;
 }
 
 .menu-item:nth-child(2) {
-  box-shadow: 5px 5px #00da3e, 6px 6px #000,
-    6px 8px #000, 8px 6px #000;
+  box-shadow: 5px 5px #00da3e, 6px 6px #000, 6px 8px #000, 8px 6px #000;
 }
 
 .menu-item:nth-child(3) {
-  box-shadow: 5px 5px #665bd1, 6px 6px #000,
-    6px 8px #000, 8px 6px #000;
+  box-shadow: 5px 5px #665bd1, 6px 6px #000, 6px 8px #000, 8px 6px #000;
 }
 
 .menu-item:hover {
@@ -348,18 +345,6 @@ body {
 }
 
 .service-item {
-  /* display: flex;
-  height: 200px;
-  width: 200px;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  border: 0.5px solid rgba(0, 0, 0, 0.278);
-  background-color: white;
-  transition: all 0.5s ease;
-  align-items: center;
-  padding: 0 10px;
-  text-align: center; */
   display: flex;
   height: 200px;
   width: 200px;
@@ -371,24 +356,20 @@ body {
   align-items: center;
   padding: 0 10px;
   text-align: center;
-  box-shadow: 6px 6px #9c7bff, 8px 8px #000,
-    0.45vmin 8px #000, 8px 7px #000;
+  box-shadow: 6px 6px #9c7bff, 8px 8px #000, 0.45vmin 8px #000, 8px 7px #000;
   border-radius: 10px;
 }
 
 .service-item:nth-child(2) {
-  box-shadow: 6px 6px #f8ff1d, 8px 8px #000,
-    0.45vmin 8px #000, 8px 7px #000;
+  box-shadow: 6px 6px #f8ff1d, 8px 8px #000, 0.45vmin 8px #000, 8px 7px #000;
 }
 
 .service-item:nth-child(3) {
-  box-shadow: 6px 6px #f8e0fa, 8px 8px #000,
-    0.45vmin 8px #000, 8px 7px #000;
+  box-shadow: 6px 6px #f8e0fa, 8px 8px #000, 0.45vmin 8px #000, 8px 7px #000;
 }
 
 .service-item:nth-child(4) {
-  box-shadow: 6px 6px #b2e2bb, 8px 8px #000,
-    0.45vmin 8px #000, 8px 7px #000;
+  box-shadow: 6px 6px #b2e2bb, 8px 8px #000, 0.45vmin 8px #000, 8px 7px #000;
 }
 
 .service-item:hover {
@@ -404,12 +385,6 @@ body {
 }
 
 .carrousel {
-  /* scroll-behavior: auto;
-    overflow-y: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    display: inline-flex;
-    animation: 35s slide infinite linear; */
   scroll-behavior: auto;
   overflow-y: auto;
   overscroll-behavior-x: contain;
@@ -424,10 +399,6 @@ body {
 }
 
 .carrousel .image {
-  /* scroll-snap-align: start;
-    width: 300px;
-    height: 250px;
-    margin: 0 20px; */
   padding: 5px;
   scroll-snap-align: start;
   width: 300px;
@@ -452,19 +423,9 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* border-radius: 10px;     */
 }
 
 .contact-container {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 1024px;
-  margin: 40px auto;
-  box-shadow: 1px 0px 29px -8px rgba(0, 0, 0, 0.75);
-  padding: 25px 20px;
-  border-radius: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -609,40 +570,40 @@ body {
 }
 
 .footer .footer-links {
-    margin: 10px 0;
-    font-size: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  margin: 10px 0;
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer .footer-links div {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .footer .socials {
-    margin: 20px 0;
-    font-size: 12px;
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    cursor: pointer;
+  margin: 20px 0;
+  font-size: 12px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .footer .anpc-links {
-    display: flex;
-    font-size: 15px;
-    align-items: center;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
 }
 
 .footer .anpc-links a {
-    list-style: none;
+  list-style: none;
 }
 
 .footer .anpc-links img {
-    max-width: 200px;
-    height: 50px;
+  max-width: 200px;
+  height: 50px;
 }
 
 .footer .credits {
@@ -716,6 +677,48 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  .menu-list li .neo-button.color-change {
+    box-shadow: 4px 4px #000;
+    border-width: 2px;
+  }
+
+  .service-item:nth-child(1) {
+    box-shadow: 4px 4px #9c7bff, 6px 6px #000, 6px 6px #000, 6px 6px #000;
+  }
+
+  .service-item:nth-child(2) {
+    box-shadow: 4px 4px #9c7bff, 6px 6px #000, 6px 6px #000, 6px 6px #000;
+  }
+
+  .service-item:nth-child(3) {
+    box-shadow: 4px 4px #f8e0fa, 6px 6px #000, 6px 6px #000, 6px 6px #000;
+  }
+
+  .service-item:nth-child(4) {
+    box-shadow: 4px 4px #b2e2bb, 6px 6px #000, 6px 6px #000, 6px 6px #000;
+  }
+
+  .menu-item:nth-child(1) {
+    box-shadow: 4px 4px #e9395c, 6px 6px #000, 6px 8px #000, 6px 6px #000;
+  }
+  
+  .menu-item:nth-child(2) {
+    box-shadow: 4px 4px #00da3e, 6px 6px #000, 6px 8px #000, 6px 6px #000;
+  }
+  
+  .menu-item:nth-child(3) {
+    box-shadow: 4px 4px #665bd1, 6px 6px #000, 6px 8px #000, 6px 6px #000;
+  }
+
+  .fa-4x {
+    font-size: 2em;
+}
+
+.footer .anpc-links img {
+    max-width: 150px;
+    height: 40px;
+}
 
   .image-container {
     padding-left: 20px;
@@ -890,7 +893,7 @@ body {
     gap: 20px;
     font-size: 15px;
     align-items: center;
-}
+  }
 
   .hero-text {
     z-index: 10;
