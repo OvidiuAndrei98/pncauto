@@ -17,8 +17,13 @@ import img4 from "./images/imagini-cu-lucrari-reparatii-radiatoare-si-sudura-in-
 import img5 from "./images/reparatie-sudura-radiator-aluminiu.jpg";
 import img6 from "./images/Reparatii radiatoare Brasov sudura aluminiu.jpg";
 import img7 from "./images/Reparatii radiatoare Brasov sudura.jpg";
-import{ReactComponent as LogoWhite } from "./images/PNC-AUTO-logos_white.svg";
-import{ReactComponent as LogoBlack } from "./images/PNC-AUTO-logos_black.svg";
+import { ReactComponent as LogoWhite } from "./images/PNC-AUTO-logos_white.svg";
+import { ReactComponent as LogoBlack } from "./images/PNC-AUTO-logos_black.svg";
+import {
+  faFacebook,
+  faFacebookMessenger,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(false);
@@ -106,7 +111,13 @@ function App() {
                 }
               >
                 <FontAwesomeIcon icon={["fab", "apple"]} />
-                <span className={`neo-button ${scrollPosition ? 'color-change' : ''}`}>WhatsApp</span>
+                <span
+                  className={`neo-button ${
+                    scrollPosition ? "color-change" : ""
+                  }`}
+                >
+                  WhatsApp
+                </span>
               </li>
             </ul>
           </div>
@@ -118,8 +129,8 @@ function App() {
             REPARATII <span className="text-gradient">RADIATOARE</span> ORICE
             TIP
             <div onClick={scrollToContact} className="contact-button">
-            Vezi mai multe
-          </div>
+              Vezi mai multe
+            </div>
           </div>
         </div>
       </div>
@@ -204,54 +215,54 @@ function App() {
       <div className="image-slider-container">
         <div className="carrousel" useScrollTo>
           <div className="image">
-            <img src={img1} />
+            <img alt="carrousel" src={img1} />
           </div>
           <div className="image">
-            <img src={img2} />
+            <img alt="carrousel" src={img2} />
           </div>
           <div className="image">
-            <img src={img3} />
+            <img alt="carrousel" src={img3} />
           </div>
           <div className="image">
-            <img src={img4} />
+            <img alt="carrousel" src={img4} />
           </div>
           <div className="image">
-            <img src={img5} />
+            <img alt="carrousel" src={img5} />
           </div>
           <div className="image">
-            <img src={img6} />
+            <img alt="carrousel" src={img6} />
           </div>
           <div className="image">
-            <img src={img7} />
+            <img alt="carrousel" src={img7} />
           </div>
           <div className="image">
-            <img src={img7} />
+            <img alt="carrousel" src={img7} />
           </div>
         </div>
         <div className="carrousel" useScrollTo>
           <div className="image">
-            <img src={img1} />
+            <img alt="carrousel" src={img1} />
           </div>
           <div className="image">
-            <img src={img2} />
+            <img alt="carrousel" src={img2} />
           </div>
           <div className="image">
-            <img src={img3} />
+            <img alt="carrousel" src={img3} />
           </div>
           <div className="image">
-            <img src={img4} />
+            <img alt="carrousel" src={img4} />
           </div>
           <div className="image">
-            <img src={img5} />
+            <img alt="carrousel" src={img5} />
           </div>
           <div className="image">
-            <img src={img6} />
+            <img alt="carrousel" src={img6} />
           </div>
           <div className="image">
-            <img src={img7} />
+            <img alt="carrousel" src={img7} />
           </div>
           <div className="image">
-            <img src={img7} />
+            <img alt="carrousel" src={img7} />
           </div>
         </div>
       </div>
@@ -331,10 +342,44 @@ function App() {
       </div>
       <footer className="footer">
         <div className="main-container">
-          <div>Legal</div>
-          <div>Contact</div>
-          <div>Servicii</div>
-          <div>About us</div>
+          <div className="footer-links">
+            <div>Legal</div>
+            <div>Contact</div>
+            <div>Servicii</div>
+            <div>About us</div>
+          </div>
+          <div className="socials">
+            <FontAwesomeIcon icon={faFacebook} size="4x" color="white" />
+            <FontAwesomeIcon icon={faInstagram} size="4x" color="white" />
+            <FontAwesomeIcon
+              icon={faFacebookMessenger}
+              size="4x"
+              color="white"
+            />
+          </div>
+          <div className="anpc-links">
+            <a
+              href="https://anpc.ro/ce-este-sal/"
+              target="_blank"
+              rel="nofollow noreferrer"
+            >
+              <img
+                src="https://wpfitness.eu/wp-content/uploads/2022/10/anpc-sal.png"
+                alt="Solutionarea Alternativa a Litigiilor"
+              />
+            </a>
+            <br />
+            <a
+              href="https://ec.europa.eu/consumers/odr"
+              target="_blank"
+              rel="nofollow noreferrer"
+            >
+              <img
+                src="https://wpfitness.eu/wp-content/uploads/2022/10/anpc-sol.png"
+                alt="Solutionarea Online a Litigiilor"
+              />
+            </a>
+          </div>
         </div>
         <span className="credits">Made by @andreipenica</span>
       </footer>
